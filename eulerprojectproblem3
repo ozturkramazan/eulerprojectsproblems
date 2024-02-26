@@ -1,17 +1,25 @@
 """The prime factors of 13195 are 5,7,13 and 29. What is the largest prime factor of the number 600851475143 ?"""
 divider=2
-number=600851475143
+number=6
 pf=[]
 total=1
-while total!=600851475143:
-    if number%divider==0:
-        if divider%2!=0:
-            pf.append(divider) 
-            total*=divider
-            divider+=1
-    else:
+while total!=6:
+        if number%divider==0:
+        
+            if divider==2: 
+#sadece bölen in 2 ye eşit olduğu durum eklenerek en küçük çift asal sayı sorgusunu ekledim. 
+#2 ye bölünen sayıları bulmada eksik olan kodu düzelttim.
+                    pf.append(divider) 
+                    total*=divider
+                    divider+=1
+            else:
+                
+                    pf.append(divider) 
+                    total*=divider
+                    divider+=1
+        else:
             divider+=1
             
         
         
-print(pf)  
+print(pf)    

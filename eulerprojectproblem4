@@ -2,3 +2,19 @@
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 
 2-digit numbers is 9009=91*99.
 Find the largest palindrome made from the product of two 3-digit numbers."""
+palindrome=set() #define a set to obtain the palindrome numbers list
+a=100
+b=100
+number=str(a*b) #number is defined as a string, to use string's indexing thats reversable 
+while a<1000 and b<1000: #the loop continues until this condition
+    
+    for a in range(100,1001): # a and b that are two numbers and have range of 100 to 1000.
+          for b in range(100,1001):
+                number=str(a*b)
+                if str(number)==str(number)[::-1]: # i want just palindromic numbers which are obtained a>900 and b>900.
+                    palindrome.add(int(number)) #convertion of "number" as integer to sort in list
+                   
+palindrome=list(palindrome) #set to list
+palindrome.sort() #to sort palindromic numbers
+print(palindrome)      
+print("eleman sayısı:", len(palindrome))

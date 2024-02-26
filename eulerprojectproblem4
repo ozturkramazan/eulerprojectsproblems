@@ -11,7 +11,7 @@ while a<1000 and b<1000: #the loop continues until this condition
     for a in range(100,1001): # a and b that are two numbers and have range of 100 to 1000.
           for b in range(100,1001):
                 number=str(a*b)
-                if str(number)==str(number)[::-1]: # i want just palindromic numbers which are obtained a>900 and b>900.
+                if str(number)==str(number)[::-1]: 
                     palindrome.add(int(number)) #convertion of "number" as integer to sort in list
                    
 palindrome=list(palindrome) #set to list

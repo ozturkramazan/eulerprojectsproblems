@@ -17,4 +17,4 @@ while a<1000 and b<1000: #the loop continues until this condition
 palindrome=list(palindrome) #set to list
 palindrome.sort() #to sort palindromic numbers
 print(palindrome)      
-print("eleman sayısı:", len(palindrome))
+print("element quantities:", len(palindrome))

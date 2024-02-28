@@ -10,7 +10,7 @@ for a in range(1,1000):
         c=d-b-a
         if c==(math.sqrt((a*a)+(b*b))): #karekök alma math.sqrt()
             product_abc=a*b*c
-            print("product abc:",product)
+            print("product abc:",product_abc)
             print("a:",a)
             print("b:",b)
             print("c:",c)

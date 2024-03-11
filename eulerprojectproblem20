@@ -1,0 +1,17 @@
+"""n! means nx(n-1)x...x3x2x1. 
+For example, 10!=10x9x...x3x2x1=3628800,
+and the sum of the digits in the number 10 is 3+6+2+8+8+0+0=27.
+Find the sum of the digits in the number 100!. """
+
+n=100  #n = 100 factorial
+product=1
+sum=0
+for i in range(1,n+1): #to find product that a hundred factorial
+    product*=i
+product=str(product)  #to get string form of product 
+for j  in range(len(product)):  #in for loops, all numbers which belongs to product assigns to "a" variable 
+                                # and them sum up into "sum" variable, finally print it.                        
+    a=product[j]
+    a=int(a)
+    sum+=a
+print(sum)

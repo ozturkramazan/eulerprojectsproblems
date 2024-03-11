@@ -1,0 +1,11 @@
+""" 2**15 = 32768 and the sum of digits is 3+2+7+6+8=26.
+What is the sum of the digits of the number 2**1000?"""
+
+n=2**1000 #n is an integer variable which is equal to 2^1000
+n=str(n)  #n is converted to string to split elements
+sum=0 #is a counter
+for i in range(len(n)): #for loop, to return n elements that are splitted in strings. and to assign them "a" variable.
+    a=n[i]
+    a=int(a) #string a values are converted to int
+    sum+=a 
+print(sum)

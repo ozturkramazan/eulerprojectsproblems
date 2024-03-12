@@ -1,0 +1,12 @@
+x=set() # created a set called 'x' variable to remove repeated numbers.
+a=int
+b=int
+for i in range (2, 101) :
+    a=i
+    for j in range (2, 101) :
+        b=j
+        x.add(a**b) # add "a" to the power of "b" values into x
+x=list(x)
+x.sort() # x is converted to a list to sort and observe whether repeatation.
+print(x)
+print(len(x))
